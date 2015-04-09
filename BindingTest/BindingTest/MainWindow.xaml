@@ -7,9 +7,12 @@
         ContentSource="/Pages/Home.xaml">
 
     <mui:ModernWindow.MenuLinkGroups>
-        <mui:LinkGroup DisplayName="welcome">
+        <mui:LinkGroup DisplayName="Binding">
             <mui:LinkGroup.Links>
-                <mui:Link DisplayName="home" Source="/Pages/Home.xaml" />
+                <mui:Link DisplayName="Binding First" Source="/Pages/Home.xaml" />
+                <mui:Link DisplayName="Binding Second" Source="/Pages/Binding Second.xaml" />
+                <mui:Link DisplayName="Binding Third" Source="/Pages/Binding Third.xaml" />
+                <mui:Link DisplayName="绑定源说明" Source="/Pages/Illustrate.xaml" />
             </mui:LinkGroup.Links>
         </mui:LinkGroup>
         <mui:LinkGroup DisplayName="settings" GroupKey="settings">

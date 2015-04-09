@@ -1,16 +1,17 @@
-﻿<UserControl x:Class="BindingTest.Pages.Home"
+﻿<UserControl x:Class="BindingTest.Pages.Binding_Third"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
              mc:Ignorable="d" 
+             xmlns:local="clr-namespace:BindingTest.Pages"
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid Style="{StaticResource ContentRoot}">
-        <ScrollViewer>
-            <StackPanel MinWidth="200">
-                <TextBox Name="tb"></TextBox>
-                <Button Name="bt" Click="bt_Click" Content="BindingChange"/>
-            </StackPanel>
-        </ScrollViewer>
+        <StackPanel MinWidth="200">
+            <TextBox Name="tb1"  Margin="3"></TextBox>
+            <TextBox Name="tb2"  Margin="3"></TextBox>
+            <TextBox Name="tb3"  Margin="3"></TextBox>
+        </StackPanel>
     </Grid>
 </UserControl>

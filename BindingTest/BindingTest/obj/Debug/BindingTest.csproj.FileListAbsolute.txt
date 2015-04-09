@@ -1,0 +1,29 @@
+D:\GItHub\WPFTest\BindingTest\BindingTest\bin\Debug\BindingTest.exe
+D:\GItHub\WPFTest\BindingTest\BindingTest\bin\Debug\BindingTest.pdb
+D:\GItHub\WPFTest\BindingTest\BindingTest\bin\Debug\FirstFloor.ModernUI.dll
+D:\GItHub\WPFTest\BindingTest\BindingTest\bin\Debug\FirstFloor.ModernUI.xml
+D:\GItHub\WPFTest\BindingTest\BindingTest\obj\Debug\BindingTest.csprojResolveAssemblyReference.cache
+D:\GItHub\WPFTest\BindingTest\BindingTest\obj\Debug\MainWindow.baml
+D:\GItHub\WPFTest\BindingTest\BindingTest\obj\Debug\Pages\Settings\About.baml
+D:\GItHub\WPFTest\BindingTest\BindingTest\obj\Debug\Pages\Settings\Appearance.baml
+D:\GItHub\WPFTest\BindingTest\BindingTest\obj\Debug\Pages\Home.baml
+D:\GItHub\WPFTest\BindingTest\BindingTest\obj\Debug\Pages\SettingsPage.baml
+D:\GItHub\WPFTest\BindingTest\BindingTest\obj\Debug\App.baml
+D:\GItHub\WPFTest\BindingTest\BindingTest\obj\Debug\MainWindow.g.cs
+D:\GItHub\WPFTest\BindingTest\BindingTest\obj\Debug\Pages\Settings\About.g.cs
+D:\GItHub\WPFTest\BindingTest\BindingTest\obj\Debug\Pages\Settings\Appearance.g.cs
+D:\GItHub\WPFTest\BindingTest\BindingTest\obj\Debug\Pages\Home.g.cs
+D:\GItHub\WPFTest\BindingTest\BindingTest\obj\Debug\Pages\SettingsPage.g.cs
+D:\GItHub\WPFTest\BindingTest\BindingTest\obj\Debug\App.g.cs
+D:\GItHub\WPFTest\BindingTest\BindingTest\obj\Debug\BindingTest_MarkupCompile.cache
+D:\GItHub\WPFTest\BindingTest\BindingTest\obj\Debug\BindingTest.g.resources
+D:\GItHub\WPFTest\BindingTest\BindingTest\obj\Debug\BindingTest.exe
+D:\GItHub\WPFTest\BindingTest\BindingTest\obj\Debug\BindingTest.pdb
+D:\GItHub\WPFTest\BindingTest\BindingTest\obj\Debug\Pages\Binding Second.baml
+D:\GItHub\WPFTest\BindingTest\BindingTest\obj\Debug\Pages\Binding Second.g.cs
+D:\GItHub\WPFTest\BindingTest\BindingTest\obj\Debug\Pages\Binding Third.baml
+D:\GItHub\WPFTest\BindingTest\BindingTest\obj\Debug\Pages\Binding Third.g.cs
+D:\GItHub\WPFTest\BindingTest\BindingTest\obj\Debug\Pages\Illustrate.baml
+D:\GItHub\WPFTest\BindingTest\BindingTest\obj\Debug\Pages\Illustrate.g.cs
+D:\GItHub\WPFTest\BindingTest\BindingTest\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\GItHub\WPFTest\BindingTest\BindingTest\obj\Debug\BindingTest_MarkupCompile.lref

@@ -1,7 +1,5 @@
-﻿using FirstFloor.ModernUI.Windows.Controls;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,17 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace BindingTest
+namespace BindingTest.Pages
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Illustrate.xaml
     /// </summary>
-    public partial class MainWindow : ModernWindow
+    public partial class Illustrate : UserControl
     {
-        public MainWindow()
+        public Illustrate()
         {
             InitializeComponent();
         }
     }
-    
 }

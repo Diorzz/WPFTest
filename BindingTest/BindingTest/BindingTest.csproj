@@ -65,10 +65,31 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\Binding Second.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Binding Third.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Illustrate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\Settings\About.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Compile Include="Pages\Binding Second.xaml.cs">
+      <DependentUpon>Binding Second.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Binding Third.xaml.cs">
+      <DependentUpon>Binding Third.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Illustrate.xaml.cs">
+      <DependentUpon>Illustrate.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Settings\About.xaml.cs">
       <DependentUpon>About.xaml</DependentUpon>
     </Compile>
