@@ -8,7 +8,7 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBox Name="tb"></TextBox>
+                <TextBox Name="tb" Margin="0,0,0,5"></TextBox>
                 <Button Name="bt" Click="bt_Click" Content="BindingChange"/>
             </StackPanel>
         </ScrollViewer>

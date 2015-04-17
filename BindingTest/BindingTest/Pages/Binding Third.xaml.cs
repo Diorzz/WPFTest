@@ -36,13 +36,13 @@ namespace BindingTest.Pages
     {
         public string Name { get; set; }
         public string Sex { get; set; }
-        public int Age { get; set; }
+        public int Id { get; set; }
 
-        public StudentS(string name,string sex,int age)
+        public StudentS(string name,string sex,int id)
         {
             this.Name = name;
             this.Sex = sex;
-            this.Age = age;
+            this.Id = id;
         }
     }
 }

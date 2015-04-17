@@ -9,7 +9,7 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Name="tb1" Text="{Binding Path=Value, ElementName=slider}"></TextBlock>
+                <TextBox Name="tb1" Text="{Binding Path=Value, ElementName=slider,UpdateSourceTrigger=PropertyChanged}"></TextBox>
                 <Slider Name="slider" Maximum="100" MinWidth="0" Margin="0,5,0,0"/>
             </StackPanel>
         </ScrollViewer>

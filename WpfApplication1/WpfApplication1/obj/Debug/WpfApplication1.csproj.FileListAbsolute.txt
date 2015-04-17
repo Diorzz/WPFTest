@@ -1,0 +1,15 @@
+D:\GItHub\WPFTest\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.exe.config
+D:\GItHub\WPFTest\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.exe
+D:\GItHub\WPFTest\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.pdb
+D:\GItHub\WPFTest\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.csprojResolveAssemblyReference.cache
+D:\GItHub\WPFTest\WpfApplication1\WpfApplication1\obj\Debug\Dictionary1.baml
+D:\GItHub\WPFTest\WpfApplication1\WpfApplication1\obj\Debug\MainWindow.baml
+D:\GItHub\WPFTest\WpfApplication1\WpfApplication1\obj\Debug\App.baml
+D:\GItHub\WPFTest\WpfApplication1\WpfApplication1\obj\Debug\MainWindow.g.cs
+D:\GItHub\WPFTest\WpfApplication1\WpfApplication1\obj\Debug\App.g.cs
+D:\GItHub\WPFTest\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1_MarkupCompile.cache
+D:\GItHub\WPFTest\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.g.resources
+D:\GItHub\WPFTest\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.Properties.Resources.resources
+D:\GItHub\WPFTest\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.csproj.GenerateResource.Cache
+D:\GItHub\WPFTest\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.exe
+D:\GItHub\WPFTest\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.pdb

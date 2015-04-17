@@ -25,5 +25,6 @@ D:\GItHub\WPFTest\BindingTest\BindingTest\obj\Debug\Pages\Binding Third.baml
 D:\GItHub\WPFTest\BindingTest\BindingTest\obj\Debug\Pages\Binding Third.g.cs
 D:\GItHub\WPFTest\BindingTest\BindingTest\obj\Debug\Pages\Illustrate.baml
 D:\GItHub\WPFTest\BindingTest\BindingTest\obj\Debug\Pages\Illustrate.g.cs
-D:\GItHub\WPFTest\BindingTest\BindingTest\obj\Debug\GeneratedInternalTypeHelper.g.cs
 D:\GItHub\WPFTest\BindingTest\BindingTest\obj\Debug\BindingTest_MarkupCompile.lref
+D:\GItHub\WPFTest\BindingTest\BindingTest\obj\Debug\Pages\LlisBiding.baml
+D:\GItHub\WPFTest\BindingTest\BindingTest\obj\Debug\Pages\LlisBiding.g.cs

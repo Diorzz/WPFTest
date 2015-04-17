@@ -13,6 +13,7 @@
                 <mui:Link DisplayName="Binding Second" Source="/Pages/Binding Second.xaml" />
                 <mui:Link DisplayName="Binding Third" Source="/Pages/Binding Third.xaml" />
                 <mui:Link DisplayName="绑定源说明" Source="/Pages/Illustrate.xaml" />
+                <mui:Link DisplayName="绑定列表" Source="/Pages/LlisBiding.xaml"/>
             </mui:LinkGroup.Links>
         </mui:LinkGroup>
         <mui:LinkGroup DisplayName="settings" GroupKey="settings">

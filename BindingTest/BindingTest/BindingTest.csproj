@@ -73,6 +73,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\LlisBiding.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\Illustrate.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -86,6 +90,9 @@
     </Compile>
     <Compile Include="Pages\Binding Third.xaml.cs">
       <DependentUpon>Binding Third.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\LlisBiding.xaml.cs">
+      <DependentUpon>LlisBiding.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\Illustrate.xaml.cs">
       <DependentUpon>Illustrate.xaml</DependentUpon>

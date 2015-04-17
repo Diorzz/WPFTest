@@ -1,0 +1,13 @@
+D:\GItHub\WPFTest\WpfApplication2\WpfApplication2\bin\Debug\WpfApplication2.exe.config
+D:\GItHub\WPFTest\WpfApplication2\WpfApplication2\bin\Debug\WpfApplication2.exe
+D:\GItHub\WPFTest\WpfApplication2\WpfApplication2\bin\Debug\WpfApplication2.pdb
+D:\GItHub\WPFTest\WpfApplication2\WpfApplication2\obj\Debug\WpfApplication2.csprojResolveAssemblyReference.cache
+D:\GItHub\WPFTest\WpfApplication2\WpfApplication2\obj\Debug\MainWindow.baml
+D:\GItHub\WPFTest\WpfApplication2\WpfApplication2\obj\Debug\MainWindow.g.cs
+D:\GItHub\WPFTest\WpfApplication2\WpfApplication2\obj\Debug\App.g.cs
+D:\GItHub\WPFTest\WpfApplication2\WpfApplication2\obj\Debug\WpfApplication2_MarkupCompile.cache
+D:\GItHub\WPFTest\WpfApplication2\WpfApplication2\obj\Debug\WpfApplication2.g.resources
+D:\GItHub\WPFTest\WpfApplication2\WpfApplication2\obj\Debug\WpfApplication2.Properties.Resources.resources
+D:\GItHub\WPFTest\WpfApplication2\WpfApplication2\obj\Debug\WpfApplication2.csproj.GenerateResource.Cache
+D:\GItHub\WPFTest\WpfApplication2\WpfApplication2\obj\Debug\WpfApplication2.exe
+D:\GItHub\WPFTest\WpfApplication2\WpfApplication2\obj\Debug\WpfApplication2.pdb
