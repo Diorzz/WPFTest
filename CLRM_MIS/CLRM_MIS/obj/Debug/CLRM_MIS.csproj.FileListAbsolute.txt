@@ -1,0 +1,14 @@
+D:\GItHub\WPFTest\CLRM_MIS\CLRM_MIS\bin\Debug\CLRM_MIS.exe
+D:\GItHub\WPFTest\CLRM_MIS\CLRM_MIS\bin\Debug\CLRM_MIS.pdb
+D:\GItHub\WPFTest\CLRM_MIS\CLRM_MIS\obj\Debug\CLRM_MIS.csprojResolveAssemblyReference.cache
+D:\GItHub\WPFTest\CLRM_MIS\CLRM_MIS\obj\Debug\MainWindow.baml
+D:\GItHub\WPFTest\CLRM_MIS\CLRM_MIS\obj\Debug\MainWindow.g.cs
+D:\GItHub\WPFTest\CLRM_MIS\CLRM_MIS\obj\Debug\App.g.cs
+D:\GItHub\WPFTest\CLRM_MIS\CLRM_MIS\obj\Debug\CLRM_MIS_MarkupCompile.cache
+D:\GItHub\WPFTest\CLRM_MIS\CLRM_MIS\obj\Debug\CLRM_MIS.g.resources
+D:\GItHub\WPFTest\CLRM_MIS\CLRM_MIS\obj\Debug\CLRM_MIS.Properties.Resources.resources
+D:\GItHub\WPFTest\CLRM_MIS\CLRM_MIS\obj\Debug\CLRM_MIS.csproj.GenerateResource.Cache
+D:\GItHub\WPFTest\CLRM_MIS\CLRM_MIS\obj\Debug\CLRM_MIS.exe
+D:\GItHub\WPFTest\CLRM_MIS\CLRM_MIS\obj\Debug\CLRM_MIS.pdb
+D:\GItHub\WPFTest\CLRM_MIS\CLRM_MIS\bin\Debug\CLRM_MIS.exe.config
+D:\GItHub\WPFTest\CLRM_MIS\CLRM_MIS\bin\Debug\DevExpress.Images.v14.2.dll
