@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="CustomControls.ColorSe"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             Name="colorSe">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Slider Name="RedSlder" Minimum="0" Maximum="255" Margin="{Binding ElementName=colorSe,Path=Padding}"
+                Value="{Binding ElementName=colorSe,Path=Red}"></Slider>
+        
+        <Slider Name="GreenSlder" Minimum="0" Maximum="255" Margin="{Binding ElementName=colorSe,Path=Padding}"
+                Value="{Binding ElementName=colorSe,Path=Green}" Grid.Row="1"></Slider>
+        
+        <Slider Name="BlueSlder" Minimum="0" Maximum="255" Margin="{Binding ElementName=colorSe,Path=Padding}"
+                Value="{Binding ElementName=colorSe,Path=Blue}" Grid.Row="2"></Slider>
+        
+        <Rectangle Grid.Column="1" Grid.RowSpan="3" Margin="{Binding ElementName=colorSe,Path=Padding}" Width="50" Stroke="Black"
+                   StrokeThickness="1">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="{Binding ElementName=colorSe,Path=Color}"></SolidColorBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+    </Grid>
+</UserControl>

@@ -1,0 +1,15 @@
+﻿<Window x:Class="UserControlDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:lib="clr-namespace:CustomControls;assembly=CustomControls"
+        xmlns:lib2="clr-namespace:CustomControls"
+        Title="CustomControlClient" Height="180" Width="305"
+        
+        >
+    <Grid>
+        <StackPanel>
+            <lib:ColorSe Name="Cs" Color="Black" ColorChanged="Cs_ColorChanged"></lib:ColorSe>
+            <TextBlock Name="tb" Text="THe Curent Color is : #000000"></TextBlock>
+        </StackPanel>
+    </Grid>
+</Window>
