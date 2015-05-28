@@ -1,0 +1,9 @@
+﻿<dx:DXWindow
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+    xmlns:view="clr-namespace:CLRM_MIS.Views"
+	x:Class="CLRM_MIS.MainWindow"
+	Title="" Height="650" Width="1025" Icon="{dx:DXImage Image=Country_32x32.png}" ShowInTaskbar="True" WindowStyle="ThreeDBorderWindow" BorderEffect="Default" ResizeMode="CanResize" SizeToContent="Manual" WindowState="Maximized">
+    <view:MainFormView/>
+</dx:DXWindow>

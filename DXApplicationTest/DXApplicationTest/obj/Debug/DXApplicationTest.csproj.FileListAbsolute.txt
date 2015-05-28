@@ -1,0 +1,14 @@
+D:\GItHub\WPFTest\DXApplicationTest\DXApplicationTest\bin\Debug\DXApplicationTest.exe
+D:\GItHub\WPFTest\DXApplicationTest\DXApplicationTest\bin\Debug\DXApplicationTest.pdb
+D:\GItHub\WPFTest\DXApplicationTest\DXApplicationTest\obj\Debug\DXApplicationTest.csprojResolveAssemblyReference.cache
+D:\GItHub\WPFTest\DXApplicationTest\DXApplicationTest\obj\Debug\MainWindow.baml
+D:\GItHub\WPFTest\DXApplicationTest\DXApplicationTest\obj\Debug\MainWindow.g.cs
+D:\GItHub\WPFTest\DXApplicationTest\DXApplicationTest\obj\Debug\App.g.cs
+D:\GItHub\WPFTest\DXApplicationTest\DXApplicationTest\obj\Debug\DXApplicationTest_MarkupCompile.cache
+D:\GItHub\WPFTest\DXApplicationTest\DXApplicationTest\obj\Debug\DXApplicationTest.g.resources
+D:\GItHub\WPFTest\DXApplicationTest\DXApplicationTest\obj\Debug\DXApplicationTest.Properties.Resources.resources
+D:\GItHub\WPFTest\DXApplicationTest\DXApplicationTest\obj\Debug\DXApplicationTest.csproj.GenerateResource.Cache
+D:\GItHub\WPFTest\DXApplicationTest\DXApplicationTest\obj\Debug\DXApplicationTest.exe
+D:\GItHub\WPFTest\DXApplicationTest\DXApplicationTest\obj\Debug\DXApplicationTest.pdb
+D:\GItHub\WPFTest\DXApplicationTest\DXApplicationTest\bin\Debug\DXApplicationTest.exe.config
+D:\GItHub\WPFTest\DXApplicationTest\DXApplicationTest\obj\Debug\DXApplicationTest.exe.licenses

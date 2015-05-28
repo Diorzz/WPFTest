@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="CLRM_MIS.Views.CBFDetailView.EditCBFView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:ViewModel="clr-namespace:CLRM_MIS.ViewModels.CBFViewModels"
+             xmlns:local="clr-namespace:CLRM_MIS.Common.Validation"
+             >
+    <Grid>
+        <StackPanel>
+            <GroupBox Header="承包方" Margin="5" FontSize="16">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                </Grid>
+            </GroupBox>
+            <GroupBox Header="家庭成员" Margin="5">
+                <DataGrid ItemsSource="{Binding Family}" AutoGenerateColumns="False" Name="_datagrid" Margin="5">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="成员名称" Binding="{Binding Name}" Width="100"/>
+                        <DataGridTextColumn Header="成员性别" Binding="{Binding Sex}" Width="100"/>
+                        <DataGridTextColumn Header="证件类型" Binding="{Binding CertificateType}" Width="100"/>
+                        <DataGridTextColumn Header="证件号码" Binding="{Binding CardNumber}" Width="100"/>
+                        <DataGridTextColumn Header="与户主关系" Binding="{Binding Relationship}" Width="100"/>
+                        <DataGridTextColumn Header="成员备注" Binding="{Binding Note}" Width="200"/>
+                        <DataGridTextColumn Header="是否共有人" Binding="{Binding IsShared}" Width="100"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </GroupBox>
+            <Button Content="OK" Click="Button_Click"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

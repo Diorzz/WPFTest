@@ -1,0 +1,5 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:esri="http://schemas.esri.com/arcgis/client/2009">
+    <esri:SimpleFillSymbol x:Key="ResultsFillSymbol" Fill="Crimson" BorderBrush="#3399ff" BorderThickness="3" />
+</ResourceDictionary>

@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="CLRM_MIS.Views.MainFormSub"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+	         xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
+	         xmlns:dxr="http://schemas.devexpress.com/winfx/2008/xaml/ribbon"
+             xmlns:esri="http://schemas.esri.com/arcgis/client/2009"
+             xmlns:Properties="clr-namespace:CLRM_MIS.Properties" 
+             xmlns:ViewModels="clr-namespace:CLRM_MIS.ViewModels" 
+             xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+             xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+             >
+    <Grid>
+            
+    </Grid>
+</UserControl>

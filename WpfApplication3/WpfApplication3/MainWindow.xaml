@@ -1,0 +1,12 @@
+﻿<Window x:Class="WpfApplication3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <StackPanel>
+            <Slider Maximum="100" Minimum="0" Name="sd"/>
+            <TextBox Name="textbox" Text="{Binding ElementName=sd, Path=Value}"/>
+        </StackPanel>
+        
+    </Grid>
+</Window>

@@ -1,0 +1,588 @@
+﻿<UserControl x:Class="CLRM_MIS.Views.CBFDetailView.NewCBFView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
+             xmlns:ViewModel="clr-namespace:CLRM_MIS.ViewModels.CBFViewModels"
+             xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+             xmlns:local="clr-namespace:CLRM_MIS.Common.Validation"
+             Width="1050" Height="800">
+    
+    <Grid ScrollViewer.CanContentScroll="True" Name="_mainGrid">
+        <Grid.DataContext>
+            <ViewModel:CBFWindowViewModel/>
+        </Grid.DataContext>
+        <Grid.Resources>
+            <!--验证样式-->
+            <Style TargetType="{x:Type TextBox}">
+                <Setter Property="Validation.ErrorTemplate">
+                    <Setter.Value>
+                        <ControlTemplate>
+                            <DockPanel LastChildFill="True">
+                                <Ellipse DockPanel.Dock="Right" Margin="2,0" Width="10" Height="10">
+                                    <Ellipse.Fill>
+                                        <LinearGradientBrush>
+                                            <GradientStop Color="Red" Offset="1"/>
+                                        </LinearGradientBrush>
+                                    </Ellipse.Fill>
+                                </Ellipse>
+                                <Border BorderBrush="Red" BorderThickness="2">
+                                    <AdornedElementPlaceholder Name="adorne"></AdornedElementPlaceholder>
+                                </Border>
+                            </DockPanel>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+                <Style.Triggers>
+                    <Trigger Property="Validation.HasError" Value="true">
+                        <Setter Property="ToolTip"
+                                Value="{Binding RelativeSource={RelativeSource Self},Path=(Validation.Errors)[0].ErrorContent}"></Setter>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+            <!--验证样式-->
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <!--第一行-->
+        <StackPanel Orientation="Horizontal">
+            <Border BorderBrush="Black" BorderThickness="1">
+                <TextBlock Text="发包方编码" Margin="5" TextAlignment="Center" Width="200"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <TextBox x:Name="FBFBM" Margin="3" Width="300">
+                    <TextBox.Text>
+                        <Binding Path="FBFBM"  NotifyOnValidationError="True" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                            <Binding.ValidationRules>
+                                <local:CBFValidation Max="14"/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <TextBlock Text="承包方编码" Margin="5" TextAlignment="Center" Width="200"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <TextBox x:Name="FBFBMSLM" Margin="3" Width="300">
+                    <TextBox.Text>
+                        <Binding Path="CBFBM"  NotifyOnValidationError="True" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                            <Binding.ValidationRules>
+                                <local:CBFValidation Max="18"/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+            </Border>
+        </StackPanel>
+        <!--第二行-->
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Border BorderBrush="Black" BorderThickness="1">
+                <TextBlock Text="承包方（代表）" Margin="5" TextAlignment="Center" Width="200"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <TextBox x:Name="CBFDB" Margin="3" Width="300">
+                    <TextBox.Text>
+                        <Binding Path="CBFDB"  NotifyOnValidationError="True" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                            <Binding.ValidationRules>
+                                <local:CBFValidation Max="50"/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <TextBlock Text="联系电话" Margin="5" TextAlignment="Center" Width="100"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <TextBox x:Name="LXDH" Margin="3" Width="400">
+                    <TextBox.Text>
+                        <Binding Path="Tel"  NotifyOnValidationError="True" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                            <Binding.ValidationRules>
+                                <local:CBFValidation Max="20"/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+            </Border>
+        </StackPanel>
+        <!--第三行-->
+        <StackPanel Grid.Row="2" Orientation="Horizontal">
+            <Border BorderBrush="Black" BorderThickness="1">
+                <TextBlock Text="承包方地址" Margin="5" TextAlignment="Center" Width="200"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <TextBox Margin="3" Width="411">
+                    <TextBox.Text>
+                        <Binding Path="Address"  NotifyOnValidationError="True" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                            <Binding.ValidationRules>
+                                <local:CBFValidation Max="100"/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <TextBlock Text="邮政编码" Margin="5" TextAlignment="Center" Width="89"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <TextBox x:Name="YZBM" Margin="3" Width="300">
+                    <TextBox.Text>
+                        <Binding Path="PostCode"  NotifyOnValidationError="True" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                            <Binding.ValidationRules>
+                                <local:CBFValidation Max="6"/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+            </Border>
+        </StackPanel>
+        <!--第四行-->
+        <StackPanel Grid.Row="3" Orientation="Horizontal">
+            <Border BorderBrush="Black" BorderThickness="1">
+                <TextBlock Text="承包方(代表)证件类型" Margin="5" TextAlignment="Center" Width="200" VerticalAlignment="Center"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <StackPanel Width="350">
+                    <StackPanel Orientation="Horizontal">
+                        <RadioButton Content="身份证" Margin="5" x:Name="SFZ" Command="{Binding RadioButtonSelected}" CommandParameter="{Binding ElementName=SFZ}"/>
+                        <RadioButton Content="军官证" Margin="5" x:Name="JGZ" Command="{Binding RadioButtonSelected}" CommandParameter="{Binding ElementName=JGZ}"/>
+                        <RadioButton Content="护照" Margin="5" x:Name="HZ" Command="{Binding RadioButtonSelected}" CommandParameter="{Binding ElementName=HZ}"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <CheckBox Content="行政、企事业单位机构代码证或法人代码证" Margin="5" x:Name="XZ"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <CheckBox Content="户口簿" Margin="5" x:Name="HKB"/>
+                        <CheckBox Content="其他" Margin="5" x:Name="QT"/>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <TextBlock Text="证件号码" Margin="5" TextAlignment="Center" Width="56" VerticalAlignment="Center"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <TextBox x:Name="ZJHM" Margin="3" Width="400">
+                    <TextBox.Text>
+                        <Binding Path="CardID"  NotifyOnValidationError="True" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                            <Binding.ValidationRules>
+                                <local:CBFValidation Max="20"/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+            </Border>
+        </StackPanel>
+        <!--第五行-->
+        <StackPanel Grid.Row="4" Orientation="Horizontal">
+            <StackPanel Orientation="Horizontal">
+                <Border BorderBrush="Black" BorderThickness="1">
+                    <TextBlock Text="有无承包合同" Margin="5" TextAlignment="Center" Width="200"/>
+                </Border>
+                <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                    <StackPanel Orientation="Horizontal">
+                        <RadioButton GroupName="YWCBHT" Content="有" Margin="5" x:Name="YWCBHEY" Command="{Binding RadioButtonSelected}" CommandParameter="{Binding ElementName=YWCBHEY}"/>
+                        <RadioButton GroupName="YWCBHT" Content="无" Margin="5" x:Name="YWCBHEN" Command="{Binding RadioButtonSelected}" CommandParameter="{Binding ElementName=YWCBHEN}"/>
+                    </StackPanel>
+                </Border>
+                <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                    <TextBlock Text="承包合同编码" Margin="5" TextAlignment="Center" Width="200"/>
+                </Border>
+                <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                    <TextBox x:Name="CBHTBM" Margin="3" Width="220">
+                        <TextBox.Text>
+                            <Binding Path="ContractID"  NotifyOnValidationError="True" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                                <Binding.ValidationRules>
+                                    <local:CBFValidation Max="19"/>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </TextBox.Text>
+                    </TextBox>
+                </Border>
+            </StackPanel>
+            <Canvas Height="120" Width="100">
+                <Border BorderBrush="Black" BorderThickness="0,1,1,1" Height="120" Width="101">
+                    <TextBlock Text="承包方类型" Margin="15,40,0,0"/>
+                </Border>
+            </Canvas>
+            <Canvas Height="120" Width="182">
+                <Border BorderBrush="Black" BorderThickness="0,1,1,1" Height="120" Width="182">
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <RadioButton GroupName="CBFLX" Content="农户" Margin="4" Name="CBFLXN" Command="{Binding RadioButtonSelected}" CommandParameter="{Binding ElementName=CBFLXN}"/>
+                            
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <RadioButton GroupName="CBFLX" Content="单位" Margin="4" Name="CBFLXD" Command="{Binding RadioButtonSelected}" CommandParameter="{Binding ElementName=CBFLXD}"/>
+                            <!--<RadioButton GroupName="ct" Content="拍卖" Margin="4" Name="PM" Command="{Binding RadioButtonSelected}" CommandParameter="{Binding ElementName=PM}"/>-->
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <RadioButton GroupName="CBFLX" Content="个人" Margin="4" Name="CBFLXG" Command="{Binding RadioButtonSelected}" CommandParameter="{Binding ElementName=CBFLXG}"/>
+                            <!--<RadioButton GroupName="ct" Content="转让" Margin="4" Name="ZR" Command="{Binding RadioButtonSelected}" CommandParameter="{Binding ElementName=ZR}"/>
+                            <RadioButton GroupName="ct" Content="互换" Margin="4" Name="HH" Command="{Binding RadioButtonSelected}" CommandParameter="{Binding ElementName=HH}"/>
+                            <RadioButton GroupName="ct" Content="其他" Margin="4" Name="QTT" Command="{Binding RadioButtonSelected}" CommandParameter="{Binding ElementName=QTT}"/>-->
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+            </Canvas>
+        </StackPanel>
+        <!--第六行-->
+        <StackPanel Grid.Row="5" Orientation="Horizontal">
+            <Border BorderBrush="Black" BorderThickness="1">
+                <TextBlock Text="有无经营权证" Margin="5" TextAlignment="Center" Width="200"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <StackPanel Orientation="Horizontal">
+                    <RadioButton GroupName="YWJYQZ" Content="有" Margin="5" x:Name="YWJYQZY" Command="{Binding RadioButtonSelected}" CommandParameter="{Binding ElementName=YWJYQZY}"/>
+                    <RadioButton GroupName="YWJYQZ" Content="无" Margin="5" x:Name="YWJYQZN" Command="{Binding RadioButtonSelected}" CommandParameter="{Binding ElementName=YWJYQZN}"/>
+                </StackPanel>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <TextBlock Text="经营权证编号" Margin="5" TextAlignment="Center" Width="200"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <TextBox x:Name="JYQZBH" Margin="3" Width="220">
+                    <TextBox.Text>
+                        <Binding Path="JYQZID"  NotifyOnValidationError="True" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                            <Binding.ValidationRules>
+                                <local:CBFValidation Max="19"/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+            </Border>
+        </StackPanel>
+        <!--第七行-->
+        <StackPanel Grid.Row="6" Orientation="Horizontal">
+            <Border BorderBrush="Black" BorderThickness="1">
+                <TextBlock Text="承包方调查日期" Margin="5" TextAlignment="Center" Width="200"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <StackPanel Orientation="Horizontal" Width="289">
+                    <DatePicker Margin="5" Text="{Binding CBFDCRQ}" SelectedDate="{Binding CBFDCRQ}"/>
+                </StackPanel>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <TextBlock Text="承包方调查员" Margin="5" TextAlignment="Center" Width="106"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <StackPanel Orientation="Horizontal">
+                    <TextBox x:Name="CBQX" Margin="3" Width="129">
+                        <TextBox.Text>
+                            <Binding Path="CBFDCY"  NotifyOnValidationError="True" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                                <Binding.ValidationRules>
+                                    <local:CBFValidation Max="50"/>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </TextBox.Text>
+                    </TextBox>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+
+        <!--第八行-->
+        <StackPanel Grid.Row="7" Orientation="Horizontal">
+            <Border BorderBrush="Black" BorderThickness="1">
+                <TextBlock Text="注意：本部分信息仅供家庭承包方式填写！" Margin="5" TextAlignment="Center" Width="607"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <TextBlock Text="家庭成员总数" Margin="5" TextAlignment="Center" Width="200"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <TextBox Margin="3" TextAlignment="Center" Width="200">
+                    <TextBox.Text>
+                        <Binding Path="FamilyCount"  NotifyOnValidationError="True" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                            <Binding.ValidationRules>
+                                <local:CBFValidation Max="2"/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+            </Border>
+        </StackPanel>
+        <!--第九行-->
+        <StackPanel Grid.Row="8" Orientation="Horizontal">
+            <Border BorderBrush="Black" BorderThickness="1">
+                <TextBlock Text="成员姓名" Margin="5" TextAlignment="Center" Width="150"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="1">
+                <TextBlock Text="成员姓别" Margin="5" TextAlignment="Center" Width="100"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <TextBlock Text="与户主关系" Margin="5" TextAlignment="Center" Width="150"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <TextBlock Text="身份证号码" Margin="5" TextAlignment="Center" Width="200"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <TextBlock Text="成员备注" Margin="5" TextAlignment="Center" Width="250"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <TextBlock Text="是否共有人" Width="119" TextAlignment="Center" Margin="5"/>
+            </Border>
+        </StackPanel>
+        <!--第十行-->
+        <StackPanel Grid.Row="9" Orientation="Horizontal">
+            <Border BorderBrush="Black" BorderThickness="1">
+                <TextBox x:Name="CYXM" Margin="3" Width="154">
+                    <TextBox.Text>
+                        <Binding Path="FamilyName"  NotifyOnValidationError="True" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                            <Binding.ValidationRules>
+                                <local:CBFValidation Max="2"/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="1">
+                <TextBox x:Name="CYXB" Margin="3" Width="104">
+                    <TextBox.Text>
+                        <Binding Path="FamilySex"  NotifyOnValidationError="True" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                            <Binding.ValidationRules>
+                                <local:CBFValidation Max="2"/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <TextBox x:Name="YHZGX" Margin="3" Width="154">
+                    <TextBox.Text>
+                        <Binding Path="FamilyRelationship"  NotifyOnValidationError="True" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                            <Binding.ValidationRules>
+                                <local:CBFValidation Max="2"/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <TextBox x:Name="SFZHM" Margin="3" Width="204">
+                    <TextBox.Text>
+                        <Binding Path="FamilyCardID"  NotifyOnValidationError="True" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                            <Binding.ValidationRules>
+                                <local:CBFValidation Max="2"/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <TextBox x:Name="CYBZ" Margin="3" Width="254">
+                    <TextBox.Text>
+                        <Binding Path="FamilyMark"  NotifyOnValidationError="True" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                            <Binding.ValidationRules>
+                                <local:CBFValidation Max="2"/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <StackPanel Orientation="Horizontal" Width="129">
+                    <RadioButton GroupName="SFGYR" Name="SFGYRY" Content="是" Margin="4" Command="{Binding RadioButtonSelected}" CommandParameter="{Binding ElementName=SFGYRY}"/>
+                    <RadioButton GroupName="SFGYR" Name="SFGYRN" Content="否" Margin="4" Command="{Binding RadioButtonSelected}" CommandParameter="{Binding ElementName=SFGYRN}"/>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+        <StackPanel Grid.Row="10">
+            <StackPanel>
+                <Button Content="添加" Width="100" HorizontalAlignment="Center" Command="{Binding AddFamily}" CommandParameter="{Binding ElementName=list}"></Button>
+                
+                <DataGrid ItemsSource="{Binding FamilyCollection}" AutoGenerateColumns="False" IsReadOnly="True" Name="_datagrid">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="承包方编码" Binding="{Binding ID}" Width="100"/>
+                        <DataGridTextColumn Header="成员名称" Binding="{Binding Name}" Width="100"/>
+                        <DataGridTextColumn Header="成员性别" Binding="{Binding Sex}" Width="100"/>
+                        <DataGridTextColumn Header="证件类型" Binding="{Binding CertificateType}" Width="100"/>
+                        <DataGridTextColumn Header="证件号码" Binding="{Binding CardNumber}" Width="100"/>
+                        <DataGridTextColumn Header="与户主关系" Binding="{Binding Relationship}" Width="100"/>
+                        <DataGridTextColumn Header="成员备注" Binding="{Binding Note}" Width="200"/>
+                        <DataGridTextColumn Header="是否共有人" Binding="{Binding IsShared}" Width="100"/>
+                        <DataGridTemplateColumn Header="删除" Width="100">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button Content="删除" Command="{Binding DataContext.FamilyDelete,ElementName=_mainGrid}"  CommandParameter="{Binding ElementName=_datagrid,Path=CurrentItem}">
+                                    </Button>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </StackPanel>
+        </StackPanel>
+        <!--第十一行--><!--
+        <StackPanel Grid.Row="10" Orientation="Horizontal">
+            <Border BorderBrush="Black" BorderThickness="1">
+                <TextBox x:Name="CYXM1" Margin="3" Width="204"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <TextBox x:Name="YHZGX1" Margin="3" Width="154"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <TextBox x:Name="SFZHM1" Margin="3" Width="239"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <TextBox x:Name="CYBZ1" Margin="3" Width="411"/>
+            </Border>
+        </StackPanel>
+        --><!--第十二行--><!--
+        <StackPanel Grid.Row="11" Orientation="Horizontal">
+            <Border BorderBrush="Black" BorderThickness="1">
+                <TextBox x:Name="CYXM2" Margin="3" Width="204"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <TextBox x:Name="YHZGX2" Margin="3" Width="154"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <TextBox x:Name="SFZHM2" Margin="3" Width="239"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <TextBox x:Name="CYBZ2" Margin="3" Width="411"/>
+            </Border>
+        </StackPanel>
+        --><!--第十三行--><!--
+        <StackPanel Grid.Row="12" Orientation="Horizontal">
+            <Border BorderBrush="Black" BorderThickness="1">
+                <TextBox x:Name="CYXM3" Margin="3" Width="204"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <TextBox x:Name="YHZGX3" Margin="3" Width="154"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <TextBox x:Name="SFZHM3" Margin="3" Width="239"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <TextBox x:Name="CYBZ3" Margin="3" Width="411"/>
+            </Border>
+        </StackPanel>
+        --><!--第十四行--><!--
+        <StackPanel Grid.Row="13" Orientation="Horizontal">
+            <Border BorderBrush="Black" BorderThickness="1">
+                <TextBox x:Name="CYXM4" Margin="3" Width="204"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <TextBox x:Name="YHZGX4" Margin="3" Width="154"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <TextBox x:Name="SFZHM4" Margin="3" Width="239"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <TextBox x:Name="CYBZ4" Margin="3" Width="411"/>
+            </Border>
+        </StackPanel>
+        --><!--第十五行--><!--
+        <StackPanel Grid.Row="14" Orientation="Horizontal">
+            <Border BorderBrush="Black" BorderThickness="1">
+                <TextBlock Text="调查记事" Margin="5" TextAlignment="Center" VerticalAlignment="Center" Width="100"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <TextBox x:Name="DCJS" Margin="3" Width="300"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="1">
+                <TextBlock Text="调查员" Margin="5" TextAlignment="Center" VerticalAlignment="Center" Width="100"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <TextBox x:Name="DCY" Margin="3" Width="176"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="1">
+                <TextBlock Text="日期" Margin="5" TextAlignment="Center" VerticalAlignment="Center" Width="100"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <TextBlock Margin="5" TextAlignment="Center" VerticalAlignment="Center" Width="200">
+                    <DatePicker DataContext="年月日" VerticalAlignment="Center"/>
+                </TextBlock>
+            </Border>
+        </StackPanel>-->
+        <!--第十六行-->
+        <StackPanel Grid.Row="14" Orientation="Horizontal">
+            <Border BorderBrush="Black" BorderThickness="1">
+                <TextBlock Text="承包方调查记事" Margin="5" TextAlignment="Center" VerticalAlignment="Center" Width="100"></TextBlock>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <TextBox Margin="3" Width="300">
+                    <TextBox.Text>
+                        <Binding Path="CBFDCJS"  NotifyOnValidationError="True" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                            <Binding.ValidationRules>
+                                <local:CBFValidation Max="300"/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="1">
+                <TextBlock Text="公示记事人" Margin="5" TextAlignment="Center" VerticalAlignment="Center" Width="100"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <TextBox Margin="3" Width="499">
+                    <TextBox.Text>
+                        <Binding Path="GSJSR"  NotifyOnValidationError="True" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                            <Binding.ValidationRules>
+                                <local:CBFValidation Max="50"/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+            </Border>
+        </StackPanel>
+        <StackPanel Grid.Row="15" Orientation="Horizontal">
+            <Border BorderBrush="Black" BorderThickness="1">
+                <TextBlock Text="公示记事" Margin="5" TextAlignment="Center" VerticalAlignment="Center" Width="100"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <TextBox x:Name="SHYJ" Margin="3" Width="300">
+                    <TextBox.Text>
+                        <Binding Path="GSJS"  NotifyOnValidationError="True" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                            <Binding.ValidationRules>
+                                <local:CBFValidation Max="300"/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="1">
+                <TextBlock Text="审核人" Margin="5" TextAlignment="Center" VerticalAlignment="Center" Width="100"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <TextBox x:Name="SHR" Margin="3" Width="176">
+                    <TextBox.Text>
+                        <Binding Path="GSSHR"  NotifyOnValidationError="True" UpdateSourceTrigger="PropertyChanged" Mode="TwoWay">
+                            <Binding.ValidationRules>
+                                <local:CBFValidation Max="50"/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="1">
+                <TextBlock Text="日期" Margin="5" TextAlignment="Center" VerticalAlignment="Center" Width="100"/>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0,1,1,1">
+                <DatePicker Text="{Binding GSSHRQ}" SelectedDate="{Binding GSSHRQ}" Width="200"/>
+            </Border>
+        </StackPanel>
+
+        <StackPanel Grid.Row="16">
+            <Button Content="提交" Width="100" Margin="20" Command="{Binding Submit}"/>
+        </StackPanel>
+
+    </Grid>
+</UserControl>

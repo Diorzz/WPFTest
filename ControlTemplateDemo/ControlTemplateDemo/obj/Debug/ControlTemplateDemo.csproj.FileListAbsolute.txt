@@ -1,0 +1,14 @@
+D:\GItHub\WPFTest\ControlTemplateDemo\ControlTemplateDemo\bin\Debug\ControlTemplateDemo.exe.config
+D:\GItHub\WPFTest\ControlTemplateDemo\ControlTemplateDemo\bin\Debug\ControlTemplateDemo.exe
+D:\GItHub\WPFTest\ControlTemplateDemo\ControlTemplateDemo\bin\Debug\ControlTemplateDemo.pdb
+D:\GItHub\WPFTest\ControlTemplateDemo\ControlTemplateDemo\obj\Debug\ControlTemplateDemo.csprojResolveAssemblyReference.cache
+D:\GItHub\WPFTest\ControlTemplateDemo\ControlTemplateDemo\obj\Debug\MainWindow.baml
+D:\GItHub\WPFTest\ControlTemplateDemo\ControlTemplateDemo\obj\Debug\MainWindow.g.cs
+D:\GItHub\WPFTest\ControlTemplateDemo\ControlTemplateDemo\obj\Debug\App.g.cs
+D:\GItHub\WPFTest\ControlTemplateDemo\ControlTemplateDemo\obj\Debug\ControlTemplateDemo_MarkupCompile.cache
+D:\GItHub\WPFTest\ControlTemplateDemo\ControlTemplateDemo\obj\Debug\ControlTemplateDemo.g.resources
+D:\GItHub\WPFTest\ControlTemplateDemo\ControlTemplateDemo\obj\Debug\ControlTemplateDemo.Properties.Resources.resources
+D:\GItHub\WPFTest\ControlTemplateDemo\ControlTemplateDemo\obj\Debug\ControlTemplateDemo.csproj.GenerateResource.Cache
+D:\GItHub\WPFTest\ControlTemplateDemo\ControlTemplateDemo\obj\Debug\ControlTemplateDemo.exe
+D:\GItHub\WPFTest\ControlTemplateDemo\ControlTemplateDemo\obj\Debug\ControlTemplateDemo.pdb
+D:\GItHub\WPFTest\ControlTemplateDemo\ControlTemplateDemo\obj\Debug\Resources\StyleListbox.baml

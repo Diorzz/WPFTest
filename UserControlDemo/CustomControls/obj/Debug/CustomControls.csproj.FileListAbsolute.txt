@@ -16,3 +16,12 @@ E:\UserControlDemo\CustomControls\obj\Debug\CustomControls_MarkupCompile.cache
 E:\UserControlDemo\CustomControls\obj\Debug\CustomControls.g.resources
 E:\UserControlDemo\CustomControls\obj\Debug\CustomControls.dll
 E:\UserControlDemo\CustomControls\obj\Debug\CustomControls.pdb
+D:\GItHub\WPFTest\UserControlDemo\CustomControls\bin\Debug\CustomControls.dll
+D:\GItHub\WPFTest\UserControlDemo\CustomControls\bin\Debug\CustomControls.pdb
+D:\GItHub\WPFTest\UserControlDemo\CustomControls\obj\Debug\CustomControls.csprojResolveAssemblyReference.cache
+D:\GItHub\WPFTest\UserControlDemo\CustomControls\obj\Debug\ColorSe.baml
+D:\GItHub\WPFTest\UserControlDemo\CustomControls\obj\Debug\ColorSe.g.cs
+D:\GItHub\WPFTest\UserControlDemo\CustomControls\obj\Debug\CustomControls_MarkupCompile.cache
+D:\GItHub\WPFTest\UserControlDemo\CustomControls\obj\Debug\CustomControls.g.resources
+D:\GItHub\WPFTest\UserControlDemo\CustomControls\obj\Debug\CustomControls.dll
+D:\GItHub\WPFTest\UserControlDemo\CustomControls\obj\Debug\CustomControls.pdb

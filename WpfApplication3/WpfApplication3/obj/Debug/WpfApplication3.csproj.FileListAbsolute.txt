@@ -1,0 +1,12 @@
+D:\GItHub\WPFTest\WpfApplication3\WpfApplication3\bin\Debug\WpfApplication3.exe.config
+D:\GItHub\WPFTest\WpfApplication3\WpfApplication3\bin\Debug\WpfApplication3.exe
+D:\GItHub\WPFTest\WpfApplication3\WpfApplication3\bin\Debug\WpfApplication3.pdb
+D:\GItHub\WPFTest\WpfApplication3\WpfApplication3\obj\Debug\MainWindow.baml
+D:\GItHub\WPFTest\WpfApplication3\WpfApplication3\obj\Debug\MainWindow.g.cs
+D:\GItHub\WPFTest\WpfApplication3\WpfApplication3\obj\Debug\App.g.cs
+D:\GItHub\WPFTest\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3_MarkupCompile.cache
+D:\GItHub\WPFTest\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3.g.resources
+D:\GItHub\WPFTest\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3.Properties.Resources.resources
+D:\GItHub\WPFTest\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3.csproj.GenerateResource.Cache
+D:\GItHub\WPFTest\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3.exe
+D:\GItHub\WPFTest\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3.pdb
